@@ -7,13 +7,9 @@
 
   <includeDependencies package="." />
 
-<!--
   <i18n:registerTranslations directory="locales" />
--->
 
   <include package=".browser" />
-
-  <cmf:registerDirectory name="ftw_colorbox" />
 
   <genericsetup:registerProfile
       name="default"

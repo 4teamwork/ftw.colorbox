@@ -1,5 +1,5 @@
 from Products.Five import BrowserView
 
 
-class ColorBoxAlbum(BrowserView):
+class ColorBoxView(BrowserView):
     pass

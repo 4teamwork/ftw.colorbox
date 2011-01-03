@@ -1,3 +1,0 @@
-jq(function() {
-    alert('ok');
-});
