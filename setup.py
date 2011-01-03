@@ -31,7 +31,6 @@ setup(name='ftw.colorbox',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Plone',
           # -*- Extra requirements: -*-
       ],
       tests_require=tests_require,
