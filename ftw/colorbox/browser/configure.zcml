@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ftw.colorbox">
+
+  <browser:page
+      for="*"
+      name="colorbox_album"
+      class=".colorbox_album.ColorBoxAlbum"
+      template="colorbox_album.pt"
+      permission="zope2.View"
+      />
+
+</configure>
