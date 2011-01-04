@@ -1,5 +1,6 @@
 jq(function() {
     jq('a.colorboxLink').colorbox({
-        'photo': true
+        'photo': true,
+        'current': "{current}/{total}"
     });
 });
