@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.0.1 (2011-12-05)
 ------------------
 
 - Addeed maxWidth and maxHeight. Images should not be bigger than 100%.
