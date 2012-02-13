@@ -9,8 +9,12 @@ class IColorboxSettings(Interface):
     image_size = schema.Text(
         title=_(u'label_imagesize', default=u'Image size'),
         description=_(u'help_imagesize',
-            default=u'Define the image size displayed in overlay. For example thumb.'),
-        default=u'large')
+            default=u'Provide the name of an image size configured in the '
+            'imaging control panel (e.g. large). If no size is given images '
+            'will be displayed in original size.'),
+        default=u'',
+        required=False,
+    )
 
     colorbox_config = schema.List(
         title=_(u'label_colorboxconfig', default=u'Colorbox config'),

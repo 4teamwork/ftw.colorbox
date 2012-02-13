@@ -21,7 +21,7 @@
                  kssClassesView context/@@kss_field_decorator_view;
                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
                  templateId template/getId;
-                 image_size python: view.settings.image_size;
+                 image_size_suffix view/image_size_suffix;
                  batch python:Batch(images, 12, int(b_start), orphan=0)">
 
     <div metal:define-macro="text-field-view"
@@ -48,7 +48,7 @@
             <div class="photoAlbumEntry">
                         <a tal:define="id python:int(b_start)+int(repeat['image'].number()-1)"
                            class="colorboxLink"
-                           tal:attributes="href string:${image/absolute_url}/@@images/image/${image_size};
+                           tal:attributes="href string:${image/absolute_url}${image_size_suffix};
                                            title python:view.image_title(image)"
                            rel="colorbox">
                             <span class="photoAlbumEntryWrapper">

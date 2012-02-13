@@ -36,3 +36,9 @@ class ColorBoxView(BrowserView):
             });
         """ % ','.join(self.settings.colorbox_config)
 
+    def image_size_suffix(self):
+        """The suffix that is appended to the image url to get the
+           configured image size."""
+        if self.settings.image_size:
+            return '/@@images/image/%s' % self.settings.image_size
+        return ''
