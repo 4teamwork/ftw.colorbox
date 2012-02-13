@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-02-13 13:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+msgid "download"
+msgstr "Herunterladen"
+
+#. Default: "One item per line. For example speed:500."
+#: ./ftw/colorbox/interfaces.py:17
+msgid "help_colorboxconfig"
+msgstr "Eine Einstellung pro Zeile. Zum Beispiel speed:500."
+
+#. Default: "Define the image size displayed in overlay. For example thumb."
+#: ./ftw/colorbox/interfaces.py:11
+msgid "help_imagesize"
+msgstr "Welche Bildgrösse soll im Overlay angezeigt werden? (z.B: thumb)"
+
+#. Default: "Should a link to the original?"
+#: ./ftw/colorbox/interfaces.py:28
+msgid "help_showlink"
+msgstr "Soll ein Download-Link angezeigt werden?"
+
+#. Default: "Colorbox config"
+#: ./ftw/colorbox/interfaces.py:16
+msgid "label_colorboxconfig"
+msgstr "Colorbox Konfiguration"
+
+#. Default: "Image size"
+#: ./ftw/colorbox/interfaces.py:10
+msgid "label_imagesize"
+msgstr "Bildgrösse"
+
+#. Default: "Show link"
+#: ./ftw/colorbox/interfaces.py:27
+msgid "label_showlink"
+msgstr "Download-Link anzeigen?"
+
+

@@ -3,13 +3,10 @@
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="plone">
 <head>
-    <metal:js metal:fill-slot="javascript_head_slot" tal:omit-tag="">
-        <script src="++resource++ftw.colorbox.resources/jquery.colorbox-min.js" type="text/javascript"></script>
-        <script src="++resource++ftw.colorbox.resources/colorbox-integration.js" type="text/javascript"></script>
+    <metal:js metal:fill-slot="javascript_head_slot">
+        <script type="text/javascript" tal:content="view/init_colorbox">
+        </script>
     </metal:js>
-    <metal:css metal:fill-slot="style_slot">
-        <link rel="stylesheet" type="text/css" href="++resource++ftw.colorbox.resources/colorbox.css" >
-    </metal:css>
 </head>
 <body>
 
@@ -24,6 +21,7 @@
                  kssClassesView context/@@kss_field_decorator_view;
                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
                  templateId template/getId;
+                 image_size python: view.settings.image_size;
                  batch python:Batch(images, 12, int(b_start), orphan=0)">
 
     <div metal:define-macro="text-field-view"
@@ -42,7 +40,7 @@
         <tal:before-batch repeat="image python:images[0:int(b_start)]">
             <a class="hiddenStructure colorboxLink"
                tal:attributes="href string:${image/absolute_url};
-                               title image/Title"
+                               title python:view.image_title(image)"
                rel="colorbox"
                >hidden</a>
         </tal:before-batch>
@@ -50,8 +48,8 @@
             <div class="photoAlbumEntry">
                         <a tal:define="id python:int(b_start)+int(repeat['image'].number()-1)"
                            class="colorboxLink"
-                           tal:attributes="href string:${image/absolute_url};
-                                           title image/Title"
+                           tal:attributes="href string:${image/absolute_url}/@@images/image/${image_size};
+                                           title python:view.image_title(image)"
                            rel="colorbox">
                             <span class="photoAlbumEntryWrapper">
                             <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
@@ -65,7 +63,7 @@
         <tal:after-batch repeat="image python:images[int(b_start)+12:]">
             <a class="hiddenStructure colorboxLink"
                tal:attributes="href string:${image/absolute_url};
-                               title image/Title"
+                               title python:view.image_title(image)"
                rel="colorbox"
                >hidden</a>
         </tal:after-batch>

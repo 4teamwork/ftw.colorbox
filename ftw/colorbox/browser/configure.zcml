@@ -8,7 +8,6 @@
       for="*"
       name="colorbox_view"
       class=".colorbox_view.ColorBoxView"
-      template="colorbox_view.pt"
       permission="zope2.View"
       />
 
