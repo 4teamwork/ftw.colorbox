@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = open('ftw/colorbox/version.txt').read().strip()
+version = '1.0.2dev'
 maintainer = 'Julian Infanger'
 
 tests_require = [
