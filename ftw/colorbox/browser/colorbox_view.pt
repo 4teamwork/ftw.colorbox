@@ -44,22 +44,24 @@
                rel="colorbox"
                >hidden</a>
         </tal:before-batch>
-        <tal:images tal:condition="batch" tal:repeat="image batch">
+        <div class="photoAlbumRow" tal:repeat="row python:view.rows(batch)">
+            <tal:images tal:condition="batch" tal:repeat="image row">
             <div class="photoAlbumEntry">
-                        <a tal:define="id python:int(b_start)+int(repeat['image'].number()-1)"
-                           class="colorboxLink"
-                           tal:attributes="href string:${image/absolute_url}${image_size_suffix};
-                                           title python:view.image_title(image)"
-                           rel="colorbox">
-                            <span class="photoAlbumEntryWrapper">
-                            <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
-                            </span>
+                <a tal:define="id python:int(b_start)+int(repeat['image'].number()-1)"
+                   class="colorboxLink"
+                   tal:attributes="href string:${image/absolute_url}${image_size_suffix};
+                                   title python:view.image_title(image)"
+                   rel="colorbox">
+                    <span class="photoAlbumEntryWrapper">
+                        <img src="" alt="" tal:replace="structure python:image.tag(scale='thumb', title=image.Description())" />
+                    </span>
                     <span class="photoAlbumEntryTitle" tal:content="image/pretty_title_or_id">
                        Title
                     </span>
-                        </a>
+                </a>
             </div>
-        </tal:images>
+            </tal:images>
+        </div>
         <tal:after-batch repeat="image python:images[int(b_start)+12:]">
             <a class="hiddenStructure colorboxLink"
                tal:attributes="href string:${image/absolute_url};

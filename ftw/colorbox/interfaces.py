@@ -32,3 +32,10 @@ class IColorboxSettings(Interface):
         description=_(u'help_showlink',
             default=u'Should a link to the original?'),
         default=False)
+
+    row_size = schema.Int(
+        title=_(u'label_row_size', default=u'Row Size'),
+        description=_(u'help_row_size',
+            default=u'The number of images shown per row. If set to 0 all '
+                     'images are floated in the same row.'),
+        default=0)

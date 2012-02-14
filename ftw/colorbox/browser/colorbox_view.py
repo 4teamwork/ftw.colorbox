@@ -42,3 +42,14 @@ class ColorBoxView(BrowserView):
         if self.settings.image_size:
             return '/@@images/image/%s' % self.settings.image_size
         return ''
+
+    def rows(self, batch):
+        """Yield successive n-sized chunks.
+        """
+        row_size = self.settings.row_size
+        if row_size < 1:
+            yield batch
+        else:
+            batch = list(batch)
+            for i in xrange(0, len(batch), row_size):
+                yield batch[i:i+row_size]

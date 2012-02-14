@@ -5,6 +5,10 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
+- Wrap each row of images in a div for easier styling. The number of images
+  per row can be configured in the registry.
+  [Thomas Buchberger]
+
 - CSS and JS in head slots should not be in a div.
   [Julian Infanger]
 
