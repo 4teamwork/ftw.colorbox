@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-02-13 13:11+0000\n"
+"POT-Creation-Date: 2012-02-14 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,38 @@ msgstr ""
 msgid "download"
 msgstr ""
 
+#. Default: "The number of thumbnails shown on a page."
+#: ./ftw/colorbox/interfaces.py:47
+msgid "help_batch_size"
+msgstr ""
+
 #. Default: "One item per line. For example speed:500."
-#: ./ftw/colorbox/interfaces.py:17
+#: ./ftw/colorbox/interfaces.py:21
 msgid "help_colorboxconfig"
 msgstr ""
 
-#. Default: "Define the image size displayed in overlay. For example thumb."
+#. Default: "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
 #: ./ftw/colorbox/interfaces.py:11
 msgid "help_imagesize"
 msgstr ""
 
-#. Default: "Should a link to the original?"
-#: ./ftw/colorbox/interfaces.py:28
+#. Default: "The number of images shown per row. If set to 0 all images are floated in the same row."
+#: ./ftw/colorbox/interfaces.py:39
+msgid "help_row_size"
+msgstr ""
+
+#. Default: "If enabled, a link to download the original image is displayed in the overlay."
+#: ./ftw/colorbox/interfaces.py:32
 msgid "help_showlink"
 msgstr ""
 
+#. Default: "Batch Size"
+#: ./ftw/colorbox/interfaces.py:46
+msgid "label_batch_size"
+msgstr ""
+
 #. Default: "Colorbox config"
-#: ./ftw/colorbox/interfaces.py:16
+#: ./ftw/colorbox/interfaces.py:20
 msgid "label_colorboxconfig"
 msgstr ""
 
@@ -42,8 +57,13 @@ msgstr ""
 msgid "label_imagesize"
 msgstr ""
 
+#. Default: "Row Size"
+#: ./ftw/colorbox/interfaces.py:38
+msgid "label_row_size"
+msgstr ""
+
 #. Default: "Show link"
-#: ./ftw/colorbox/interfaces.py:27
+#: ./ftw/colorbox/interfaces.py:31
 msgid "label_showlink"
 msgstr ""
 

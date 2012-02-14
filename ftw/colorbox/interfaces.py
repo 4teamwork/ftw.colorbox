@@ -30,7 +30,8 @@ class IColorboxSettings(Interface):
     show_link = schema.Bool(
         title=_(u'label_showlink', default=u'Show link'),
         description=_(u'help_showlink',
-            default=u'Should a link to the original?'),
+            default=u'If enabled, a link to download the original image is '
+                     'displayed in the overlay.'),
         default=False)
 
     row_size = schema.Int(
