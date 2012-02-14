@@ -38,4 +38,12 @@ class IColorboxSettings(Interface):
         description=_(u'help_row_size',
             default=u'The number of images shown per row. If set to 0 all '
                      'images are floated in the same row.'),
-        default=0)
+        default=0
+    )
+
+    batch_size = schema.Int(
+        title=_(u'label_batch_size', default=u'Batch Size'),
+        description=_(u'help_batch_size',
+            default=u'The number of thumbnails shown on a page.'),
+        default=12
+    )

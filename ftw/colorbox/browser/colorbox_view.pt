@@ -22,7 +22,8 @@
                  getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
                  templateId template/getId;
                  image_size_suffix view/image_size_suffix;
-                 batch python:Batch(images, 12, int(b_start), orphan=0)">
+                 b_size view/settings/batch_size;
+                 batch python:Batch(images, b_size, int(b_start), orphan=0)">
 
     <div metal:define-macro="text-field-view"
          id="parent-fieldname-text" class="stx"
@@ -62,7 +63,7 @@
             </div>
             </tal:images>
         </div>
-        <tal:after-batch repeat="image python:images[int(b_start)+12:]">
+        <tal:after-batch repeat="image python:images[int(b_start)+b_size:]">
             <a class="hiddenStructure colorboxLink"
                tal:attributes="href string:${image/absolute_url};
                                title python:view.image_title(image)"
