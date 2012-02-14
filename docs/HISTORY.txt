@@ -12,6 +12,12 @@ Changelog
   per row can be configured in the registry.
   [Thomas Buchberger]
 
+- Make ColorBox options configurable in the registry.
+  [Julian Infanger]
+
+- Allow to specify an image size for the overlay.
+  [Julian Infanger]
+
 - CSS and JS in head slots should not be in a div.
   [Julian Infanger]
 
