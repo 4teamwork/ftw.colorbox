@@ -40,7 +40,7 @@
     <tal:albumsimages tal:condition="python:albums or images">
         <tal:before-batch repeat="image python:images[0:int(b_start)]">
             <a class="hiddenStructure colorboxLink"
-               tal:attributes="href string:${image/absolute_url};
+               tal:attributes="href string:${image/absolute_url}${image_size_suffix};
                                title python:view.image_title(image)"
                rel="colorbox"
                >hidden</a>
@@ -65,7 +65,7 @@
         </div>
         <tal:after-batch repeat="image python:images[int(b_start)+b_size:]">
             <a class="hiddenStructure colorboxLink"
-               tal:attributes="href string:${image/absolute_url};
+               tal:attributes="href string:${image/absolute_url}${image_size_suffix};
                                title python:view.image_title(image)"
                rel="colorbox"
                >hidden</a>
