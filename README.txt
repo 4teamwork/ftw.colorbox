@@ -36,3 +36,11 @@ colorbox_config
     speed: 250
     maxWidth: "90%"
     maxHeight: "90%"
+
+
+Copyright
+=========
+
+This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
+
+``ftw.colorbox`` is licensed under GNU General Public License, version 2.
