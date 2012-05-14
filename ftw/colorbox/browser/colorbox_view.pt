@@ -2,12 +2,6 @@
       lang="en-US"
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="plone">
-<head>
-    <metal:js metal:fill-slot="javascript_head_slot">
-        <script type="text/javascript" tal:content="view/init_colorbox">
-        </script>
-    </metal:js>
-</head>
 <body>
 
 <metal:content-core fill-slot="content-core">
