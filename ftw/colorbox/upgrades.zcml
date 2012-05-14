@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ftw.colorbox">
+
+    <gs:registerProfile
+        name="to_v1001"
+        title="Upgrade profile for ftw.blog"
+        description="This profile upgrades ftw.blog to version 1001."
+        directory="profiles/to_v1001"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <gs:upgradeStep
+        title="Upgrade profile for ftw.blog"
+        description="Imports to_v1001 profile."
+        source="1000"
+        destination="1001"
+        handler="ftw.colorbox.upgrades.upgrade_to_v1001"
+        profile="ftw.colorbox:default"
+        />
+
+</configure>
