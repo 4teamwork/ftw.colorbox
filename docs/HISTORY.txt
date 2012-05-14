@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Implement a default js, which looks for colorboxLink css class.
+  [tschanzt]
 
 
 1.1 (2012-02-14)
