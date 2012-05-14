@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix package structure.
+  [mathias.leimgruber]
 
 
 1.1.1 (2012-05-14)

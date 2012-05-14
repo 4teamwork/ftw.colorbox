@@ -11,7 +11,7 @@ tests_require = [
 setup(name='ftw.colorbox',
       version=version,
       description="An image gallery for Plone using ColorBox",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
         "Framework :: Plone",
