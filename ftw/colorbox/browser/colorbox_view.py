@@ -27,15 +27,6 @@ class ColorBoxView(BrowserView):
                           context=self.request)))
         return ' '.join(title)
 
-    def init_colorbox(self):
-        return """
-            jQuery(function($) {
-                jq('a.colorboxLink').colorbox({
-                    %s
-                });
-            });
-        """ % ','.join(self.settings.colorbox_config)
-
     def image_size_suffix(self):
         """The suffix that is appended to the image url to get the
            configured image size."""

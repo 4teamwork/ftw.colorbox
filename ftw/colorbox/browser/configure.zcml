@@ -11,6 +11,13 @@
       permission="zope2.View"
       />
 
+  <browser:page
+      for="*"
+      name="init-colorbox.js"
+      class=".initalize_colorbox.InitColorBoxView"
+      permission="zope2.View"
+      />
+
   <browser:resourceDirectory
       name="ftw.colorbox.resources"
       directory="resources"
