@@ -38,6 +38,14 @@ colorbox_config
     maxHeight: "90%"
 
 
+Links
+=====
+
+- Github project repository: https://github.com/4teamwork/ftw.colorbox
+- Issue tracker: https://github.com/4teamwork/ftw.colorbox/issues
+- Package on pypi: http://pypi.python.org/pypi/ftw.colorbox
+
+
 Copyright
 =========
 
