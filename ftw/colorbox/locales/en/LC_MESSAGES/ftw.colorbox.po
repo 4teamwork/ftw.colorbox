@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-01-27 11:16+0000\n"
+"POT-Creation-Date: 2012-02-14 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,59 +10,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
 
 msgid "download"
-msgstr "Télécharger"
+msgstr "download"
 
 #. Default: "The number of thumbnails shown on a page."
 #: ./ftw/colorbox/interfaces.py:47
 msgid "help_batch_size"
-msgstr "Le nombre d'images affichées sur une page"
+msgstr "The number of thumbnails shown on a page."
 
 #. Default: "One item per line. For example speed:500."
 #: ./ftw/colorbox/interfaces.py:21
 msgid "help_colorboxconfig"
-msgstr "Un article par ligne. Par exemple speed:500"
+msgstr "One item per line. For example speed:500."
 
 #. Default: "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
 #: ./ftw/colorbox/interfaces.py:11
 msgid "help_imagesize"
-msgstr "Mettre à disposition le nom / la taille de l'image configurée dans la base de l'imagerie (ex: large). Si aucune indication n'est donnée, l'image aura une taille définie."
+msgstr "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
 
 #. Default: "The number of images shown per row. If set to 0 all images are floated in the same row."
 #: ./ftw/colorbox/interfaces.py:39
 msgid "help_row_size"
-msgstr "Le nombre d'images par lignes. Si défini sur 0, toutes les images seront sur la même ligne"
+msgstr "The number of images shown per row. If set to 0 all images are floated in the same row."
 
 #. Default: "If enabled, a link to download the original image is displayed in the overlay."
 #: ./ftw/colorbox/interfaces.py:32
 msgid "help_showlink"
-msgstr "Si activé, un lien pour télécharger l'image originale est à disposition"
+msgstr "If enabled, a link to download the original image is displayed in the overlay."
 
 #. Default: "Batch Size"
 #: ./ftw/colorbox/interfaces.py:46
 msgid "label_batch_size"
-msgstr "Taille du Batch"
+msgstr "Batch Size"
 
 #. Default: "Colorbox config"
 #: ./ftw/colorbox/interfaces.py:20
 msgid "label_colorboxconfig"
-msgstr "Configuration de la Colorbox"
+msgstr "Colorbox config"
 
 #. Default: "Image size"
 #: ./ftw/colorbox/interfaces.py:10
 msgid "label_imagesize"
-msgstr "Taille d'image"
+msgstr "Image size"
 
 #. Default: "Row Size"
 #: ./ftw/colorbox/interfaces.py:38
 msgid "label_row_size"
-msgstr "Taille de la ligne"
+msgstr "Row Size"
 
 #. Default: "Show link"
 #: ./ftw/colorbox/interfaces.py:31
 msgid "label_showlink"
-msgstr "Afficher le lien de téléchargement"
-
-
+msgstr "Show link"
