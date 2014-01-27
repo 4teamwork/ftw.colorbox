@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-02-14 16:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Preferred-Encodings: utf-8 latin1\n"
+
+msgid "download"
+msgstr "download"
+
+#. Default: "The number of thumbnails shown on a page."
+#: ./ftw/colorbox/interfaces.py:47
+msgid "help_batch_size"
+msgstr "The number of thumbnails shown on a page."
+
+#. Default: "One item per line. For example speed:500."
+#: ./ftw/colorbox/interfaces.py:21
+msgid "help_colorboxconfig"
+msgstr "One item per line. For example speed:500."
+
+#. Default: "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
+#: ./ftw/colorbox/interfaces.py:11
+msgid "help_imagesize"
+msgstr "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
+
+#. Default: "The number of images shown per row. If set to 0 all images are floated in the same row."
+#: ./ftw/colorbox/interfaces.py:39
+msgid "help_row_size"
+msgstr "The number of images shown per row. If set to 0 all images are floated in the same row."
+
+#. Default: "If enabled, a link to download the original image is displayed in the overlay."
+#: ./ftw/colorbox/interfaces.py:32
+msgid "help_showlink"
+msgstr "If enabled, a link to download the original image is displayed in the overlay."
+
+#. Default: "Batch Size"
+#: ./ftw/colorbox/interfaces.py:46
+msgid "label_batch_size"
+msgstr "Batch Size"
+
+#. Default: "Colorbox config"
+#: ./ftw/colorbox/interfaces.py:20
+msgid "label_colorboxconfig"
+msgstr "Colorbox config"
+
+#. Default: "Image size"
+#: ./ftw/colorbox/interfaces.py:10
+msgid "label_imagesize"
+msgstr "Image size"
+
+#. Default: "Row Size"
+#: ./ftw/colorbox/interfaces.py:38
+msgid "label_row_size"
+msgstr "Row Size"
+
+#. Default: "Show link"
+#: ./ftw/colorbox/interfaces.py:31
+msgid "label_showlink"
+msgstr "Show link"
