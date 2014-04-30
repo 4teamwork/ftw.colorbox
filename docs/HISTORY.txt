@@ -5,6 +5,9 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
+- Updated library to v1.5.9.
+  [lknoepfel]
+
 - Update French and English translations.
   [jone]
 
