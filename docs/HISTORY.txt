@@ -5,6 +5,12 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
+- Made colorbox fullscreen and repositioned forward/back buttons.
+  [lknoepfel]
+
+- Updated library to v1.5.9.
+  [lknoepfel]
+
 - Update French and English translations.
   [jone]
 
