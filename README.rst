@@ -52,7 +52,3 @@ Copyright
 This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
 
 ``ftw.colorbox`` is licensed under GNU General Public License, version 2.
-
-.. image:: https://cruel-carlota.pagodabox.com/2786255eb585c9e5a9a5ef7d8d336a39
-   :alt: githalytics.com
-   :target: http://githalytics.com/4teamwork/ftw.colorbox
