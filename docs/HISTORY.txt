@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
+1.2.1 (2015-06-26)
 ------------------
 
 - Exclude colorbox-initialization into a function
