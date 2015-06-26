@@ -5,7 +5,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Exclude colorbox-initialization into a function
+  [elioschmutz]
 
 
 1.2.0 (2014-09-23)
