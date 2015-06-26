@@ -10,10 +10,12 @@ class InitColorBoxView(BrowserView):
         registry = getUtility(IRegistry)
         settings = registry.forInterface(IColorboxSettings)
         return """
-            jQuery(function($) {
+            var ftwColorboxInitialize = function() {
                 $('a.colorboxLink').colorbox({
                     %s
                 });
+            }
+            jQuery(function($) {
+                ftwColorboxInitialize();
             });
         """ % ','.join(settings.colorbox_config)
-
