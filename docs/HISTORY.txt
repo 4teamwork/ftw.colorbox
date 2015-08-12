@@ -8,6 +8,9 @@ Changelog
 - Add test setup.
   [mbaechtold]
 
+- Add image scale so the image dimensions can be configured.
+  [mbaechtold]
+
 
 1.2.1 (2015-06-26)
 ------------------

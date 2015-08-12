@@ -2,21 +2,22 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="ftw.colorbox">
 
-  <includeDependencies package="." />
+    <includeDependencies package="." />
 
-  <i18n:registerTranslations directory="locales" />
+    <i18n:registerTranslations directory="locales" />
 
-  <include package=".browser" />
+    <include package=".browser" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="ftw.colorbox"
-      directory="profiles/default"
-      description=""
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <genericsetup:registerProfile
+        name="default"
+        title="ftw.colorbox"
+        directory="profiles/default"
+        description=""
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <include package=".upgrades" />
 
 </configure>
