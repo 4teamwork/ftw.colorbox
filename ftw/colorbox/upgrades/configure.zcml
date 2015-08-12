@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:upgrade-step="http://namespaces.zope.org/ftw.upgrade"
+    i18n_domain="ftw.colorbox">
+
+    <include package="ftw.upgrade" file="meta.zcml" />
+
+    <upgrade-step:directory
+        profile="ftw.colorbox:default"
+        directory="."
+        />
+
+</configure>
