@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="ftw.colorbox">
 
     <includeDependencies package="." />
@@ -9,6 +10,7 @@
     <i18n:registerTranslations directory="locales" />
 
     <include package=".browser" />
+    <include file="resources.zcml" zcml:condition="installed ftw.theming" />
 
     <genericsetup:registerProfile
         name="default"
