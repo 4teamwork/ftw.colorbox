@@ -1,0 +1,67 @@
+$cbox-button-background-color: #fff !default;
+$cbox-button-size: 40px !default;
+
+@include declare-variables(
+    cbox-button-background-color,
+    cbox-button-size);
+
+#cboxContent {
+  > button {
+    background-image: none;
+    width: $cbox-button-size;
+    height: $cbox-button-size;
+    text-indent: 0;
+    font-size: 0;
+    @extend .fa-icon;
+    &:before {
+      font-size: $cbox-button-size / 2;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+#cboxLoadedContent {
+  margin-bottom: $cbox-button-size;
+}
+
+#cboxPrevious {
+  @extend .fa-chevron-left;
+  background-color: $cbox-button-background-color;
+}
+
+#cboxNext {
+  @extend .fa-chevron-right;
+  background-color: $cbox-button-background-color;
+}
+
+#cboxClose {
+  @extend .fa-times;
+  width: 50px;
+  text-indent: 0;
+  font-size: 0;
+  padding: 0;
+  position: absolute;
+  bottom: $cbox-button-size;
+  right: 0;
+  padding-bottom: 20px;
+}
+
+#cboxTitle {
+  position: absolute;
+  bottom: $cbox-button-size;
+  background-color: rgba(255, 255, 255, .8);
+  padding: 20px 65px 20px 95px;
+  color: #000;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#cboxCurrent {
+  position: absolute;
+  bottom: $cbox-button-size;
+  width: 80px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+}
