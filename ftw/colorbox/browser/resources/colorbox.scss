@@ -21,7 +21,7 @@ $cbox-button-size: 40px !default;
 }
 
 #cboxLoadedContent {
-  margin-bottom: $cbox-button-size;
+  margin-bottom: 0;
 }
 
 #cboxPrevious {
@@ -41,27 +41,29 @@ $cbox-button-size: 40px !default;
   font-size: 0;
   padding: 0;
   position: absolute;
-  bottom: $cbox-button-size;
+  bottom: 0;
   right: 0;
   padding-bottom: 20px;
 }
 
 #cboxTitle {
   position: absolute;
-  bottom: $cbox-button-size;
+  bottom: 0;
   background-color: rgba(255, 255, 255, .8);
   padding: 20px 65px 20px 95px;
   color: #000;
   text-align: left;
   box-sizing: border-box;
+  font-weight: bold;
 }
 
 #cboxCurrent {
   position: absolute;
-  bottom: $cbox-button-size;
+  bottom: 0;
   width: 80px;
   text-align: center;
   color: #000;
   padding-bottom: 20px;
   letter-spacing: 4px;
+  font-weight: bold;
 }
