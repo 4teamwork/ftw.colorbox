@@ -5,6 +5,9 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
+- Adjust border size of overlay for ftw.theming.
+  [Kevin Bieri]
+
 - Declare missing dependency to the "Plone" egg.
   [jone]
 
