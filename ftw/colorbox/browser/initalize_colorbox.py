@@ -11,9 +11,23 @@ class InitColorBoxView(BrowserView):
         settings = registry.forInterface(IColorboxSettings)
         return """
             var ftwColorboxInitialize = function() {
-                $('a.colorboxLink').colorbox({
-                    %s
-                });
+                var staticOptions = {
+                    'title': function(){
+                        var link = $(this);
+                        var title = link.attr('title');
+
+                        // Use the value from the attrib "data-caption" if there is one.
+                        var caption = link.data('caption');
+                        if (caption) {
+                            title = caption;
+                        }
+
+                        return title;
+                    }
+                }
+                var options = {%s}  // The options stored in the Plone registry.
+                $.extend(options, staticOptions)
+                $('a.colorboxLink').colorbox(options);
             }
             jQuery(function($) {
                 ftwColorboxInitialize();

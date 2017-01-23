@@ -5,7 +5,9 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- The caption of the colorbox can now be provided by putting a "data-caption"
+  attribute on the link opening the colorbox.
+  [mbaechtold, mathias.leimgruber]
 
 
 1.2.3 (2015-12-23)
