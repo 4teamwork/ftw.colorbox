@@ -55,6 +55,12 @@ $cbox-button-size: 40px !default;
   text-align: left;
   box-sizing: border-box;
   font-weight: bold;
+
+  // The colorbox title displays a white rectangle without any text
+  // So do not render the title when the element is empty
+  &:empty {
+    display: none !important;
+  }
 }
 
 #cboxCurrent {
