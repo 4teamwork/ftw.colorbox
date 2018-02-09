@@ -5,6 +5,8 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
+- Add plone 5 default profile. [mathias.leimgruber]
+
 - Fix rendering of empty colorbox title.
   [Kevin Bieri]
 

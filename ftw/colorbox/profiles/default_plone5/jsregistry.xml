@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+    <javascript id="++resource++ftw.colorbox.resources/jquery.colorbox-min.js"
+                enabled="True" />
+    <javascript cacheable="True" compression="safe" cookable="True"
+               enabled="True" expression=""
+               id="init-colorbox.js"
+               inline="False"
+               />
+</object>
