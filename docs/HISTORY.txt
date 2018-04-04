@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.5 (unreleased)
+1.3.0 (2018-04-04)
 ------------------
 
 - Remove empty space when no counter is displayed and improve mobile styling.
