@@ -5,6 +5,9 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
+- Remove empty space when no counter is displayed and improve mobile styling.
+  [raphael-s]
+
 - Add plone 5 default profile. [mathias.leimgruber]
 
 - Fix rendering of empty colorbox title.

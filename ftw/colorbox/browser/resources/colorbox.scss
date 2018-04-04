@@ -73,3 +73,24 @@ $cbox-button-size: 40px !default;
   letter-spacing: 4px;
   font-weight: bold;
 }
+
+/* Style mobile colorbox */
+#cboxWrapper {
+  #cboxTitle, #cboxCurrent {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include screen-small() {
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  #cboxClose {
+    padding-bottom: 10px;
+    @include screen-small() {
+      padding-bottom: 20px;
+    }
+  }
+}
