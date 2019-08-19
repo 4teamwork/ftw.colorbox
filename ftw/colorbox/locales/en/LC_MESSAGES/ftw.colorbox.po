@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-02-14 16:11+0000\n"
+"POT-Creation-Date: 2019-08-19 10:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,10 +14,19 @@ msgstr ""
 msgid "download"
 msgstr "download"
 
+#: ./ftw/colorbox/configure.zcml:22
+msgid "ftw.colorbox"
+msgstr ""
+
 #. Default: "The number of thumbnails shown on a page."
-#: ./ftw/colorbox/interfaces.py:47
+#: ./ftw/colorbox/interfaces.py:61
 msgid "help_batch_size"
 msgstr "The number of thumbnails shown on a page."
+
+#. Default: "Javascript that runs inside a jquery \".not(function() { ... })\" expression, where \"this\" is the a.colorbox element. The expression has to return either \"true\" for removing an item from the set or \"false\" to keep an item in the set. An example would bt to exlude certain classes: \"return $(this).hasClass('slick-cloned');\""
+#: ./ftw/colorbox/interfaces.py:32
+msgid "help_colorbox_exlude"
+msgstr ""
 
 #. Default: "One item per line. For example speed:500."
 #: ./ftw/colorbox/interfaces.py:21
@@ -30,19 +39,24 @@ msgid "help_imagesize"
 msgstr "Provide the name of an image size configured in the imaging control panel (e.g. large). If no size is given images will be displayed in original size."
 
 #. Default: "The number of images shown per row. If set to 0 all images are floated in the same row."
-#: ./ftw/colorbox/interfaces.py:39
+#: ./ftw/colorbox/interfaces.py:53
 msgid "help_row_size"
 msgstr "The number of images shown per row. If set to 0 all images are floated in the same row."
 
 #. Default: "If enabled, a link to download the original image is displayed in the overlay."
-#: ./ftw/colorbox/interfaces.py:32
+#: ./ftw/colorbox/interfaces.py:46
 msgid "help_showlink"
 msgstr "If enabled, a link to download the original image is displayed in the overlay."
 
 #. Default: "Batch Size"
-#: ./ftw/colorbox/interfaces.py:46
+#: ./ftw/colorbox/interfaces.py:60
 msgid "label_batch_size"
 msgstr "Batch Size"
+
+#. Default: "Colorbox Exclude"
+#: ./ftw/colorbox/interfaces.py:31
+msgid "label_colorbox_exclude"
+msgstr ""
 
 #. Default: "Colorbox config"
 #: ./ftw/colorbox/interfaces.py:20
@@ -55,11 +69,12 @@ msgid "label_imagesize"
 msgstr "Image size"
 
 #. Default: "Row Size"
-#: ./ftw/colorbox/interfaces.py:38
+#: ./ftw/colorbox/interfaces.py:52
 msgid "label_row_size"
 msgstr "Row Size"
 
 #. Default: "Show link"
-#: ./ftw/colorbox/interfaces.py:31
+#: ./ftw/colorbox/interfaces.py:45
 msgid "label_showlink"
 msgstr "Show link"
+

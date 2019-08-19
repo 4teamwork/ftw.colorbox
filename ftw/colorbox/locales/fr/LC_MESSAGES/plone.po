@@ -13,3 +13,4 @@ msgstr ""
 
 msgid "colorbox_view"
 msgstr "Colorbox album"
+
