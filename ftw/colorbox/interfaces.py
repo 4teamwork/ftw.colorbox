@@ -27,6 +27,20 @@ class IColorboxSettings(Interface):
             "'maxWidth': '100%'",
             "'maxHeight': '100%'"])
 
+    colorbox_exclude = schema.Text(
+        title=_(u'label_colorbox_exclude', default=u'Colorbox Exclude'),
+        description=_(u'help_colorbox_exlude',
+            default=u'Javascript that runs inside a jquery '
+                      '".not(function() { ... })" expression, where "this" is '
+                      'the a.colorbox element. The expression has to '
+                      'return either "true" for removing an item from the set '
+                      'or "false" to keep an item in the set. An example would '
+                      'bt to exlude certain classes: '
+                      '"return $(this).hasClass(\'slick-cloned\');"'),
+        default=u'return false;',
+        required=False,
+    )
+
     show_link = schema.Bool(
         title=_(u'label_showlink', default=u'Show link'),
         description=_(u'help_showlink',
