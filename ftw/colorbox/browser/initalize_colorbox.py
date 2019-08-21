@@ -9,6 +9,7 @@ class InitColorBoxView(BrowserView):
     def __call__(self):
         registry = getUtility(IRegistry)
         settings = registry.forInterface(IColorboxSettings)
+        exclude_expression = settings.colorbox_exclude
         return """
             var ftwColorboxInitialize = function() {
                 var staticOptions = {
@@ -27,9 +28,9 @@ class InitColorBoxView(BrowserView):
                 }
                 var options = {%s}  // The options stored in the Plone registry.
                 $.extend(options, staticOptions)
-                $('a.colorboxLink').colorbox(options);
+                $('a.colorboxLink').not(function(){%s}).colorbox(options);
             }
             jQuery(function($) {
                 ftwColorboxInitialize();
             });
-        """ % ','.join(settings.colorbox_config)
+        """ % (','.join(settings.colorbox_config), exclude_expression)
