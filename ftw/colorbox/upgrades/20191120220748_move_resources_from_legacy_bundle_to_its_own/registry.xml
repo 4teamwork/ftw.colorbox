@@ -1,17 +1,12 @@
 <?xml version="1.0"?>
 <registry>
-  <records interface="ftw.colorbox.interfaces.IColorboxSettings" />
-
-  <records interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
-           prefix="plone">
-    <value key="allowed_sizes" purge="false">
-      <element>colorbox 2000:2000</element>
-    </value>
-  </records>
 
     <records prefix="plone.resources/ftwcolorbox_lib"
              interface="Products.CMFPlone.interfaces.IResourceRegistry">
         <value key="js">++resource++ftw.colorbox.resources/jquery.colorbox-min.js</value>
+        <value key="css">
+            <element>++resource++ftw.colorbox.resources/colorbox.css</element>
+        </value>
         <value key="deps">jquery</value>
     </records>
 
@@ -38,6 +33,7 @@
         <value key="depends">plone</value>
         <value key="compile">False</value>
         <value key="jscompilation">++plone++ftw.colorbox.resources/ftw-colorbox-compiled.js</value>
+        <value key="csscompilation">++plone++ftw.colorbox.resources/ftw-colorbox-compiled.css</value>
         <value key="merge_with">default</value>
     </records>
 

@@ -5,7 +5,7 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move resources to its own bundle for plone 5. [mathias.leimgruber]
 
 
 1.4.0 (2019-08-21)
