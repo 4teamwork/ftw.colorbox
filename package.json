@@ -1,0 +1,11 @@
+{
+  "name": "ftw.colorbox",
+  "version": "1.0.0",
+  "repository": "git@github.com:4teamwork/ftw.colorbox.git",
+  "author": "4teamwork AG <info@4teamwork.ch>",
+  "license": "GPL2",
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "requirejs": "^2.3.6"
+  }
+}
