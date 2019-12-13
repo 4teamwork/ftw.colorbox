@@ -5,7 +5,7 @@
   <records interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
            prefix="plone">
     <value key="allowed_sizes" purge="false">
-      <element value="colorbox 2000:2000" remove="true"></element>
+      <element remove="true">colorbox 2000:2000</element>
     </value>
   </records>
 
