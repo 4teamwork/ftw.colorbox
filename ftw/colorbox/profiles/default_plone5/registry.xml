@@ -16,6 +16,7 @@
         <value key="stub_js_modules">jquery</value>
         <value key="compile">False</value>
         <value key="jscompilation">++plone++ftw.colorbox.resources/ftw-colorbox-compiled.js</value>
+        <value key="csscompilation">++plone++ftw.colorbox.resources/ftw-colorbox-compiled.css</value>
         <value key="merge_with">default</value>
     </records>
 

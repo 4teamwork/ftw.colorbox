@@ -6,6 +6,7 @@ Changelog
 ------------------
 
 - Move resources to its own bundle for plone 5. [mathias.leimgruber]
+- Bundle JS & CSS resources with Yarn. [djowett-ftw]
 - Add uninstall profiles for plone 4 and 5. [djowett-ftw]
 
 
