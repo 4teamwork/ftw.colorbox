@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="ftw.colorbox.interfaces.IColorboxSettings" remove="True" />
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
+           prefix="plone">
+    <value key="allowed_sizes" purge="false">
+      <element remove="true">colorbox 2000:2000</element>
+    </value>
+  </records>
+
+    <records prefix="plone.bundles/ftw-colorbox-resources"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry" remove="True" />
+
+</registry>

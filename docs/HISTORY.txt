@@ -6,6 +6,7 @@ Changelog
 ------------------
 
 - Move resources to its own bundle for plone 5. [mathias.leimgruber]
+- Add uninstall profiles for plone 4 and 5. [djowett-ftw]
 
 
 1.4.0 (2019-08-21)

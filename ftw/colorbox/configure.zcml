@@ -1,9 +1,12 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="ftw.colorbox">
+
+    <five:registerPackage package="." initialize=".initialize" />
 
     <includeDependencies package="." />
 
@@ -12,6 +15,7 @@
     <include package=".browser" />
     <include file="resources.zcml" zcml:condition="installed ftw.theming" />
 
+    <!-- Plone 4 profiles -->
     <genericsetup:registerProfile
         zcml:condition="not-have plone-5"
         name="default"
@@ -22,12 +26,33 @@
         />
 
     <genericsetup:registerProfile
+        zcml:condition="not-have plone-5"
+        name="uninstall"
+        title="ftw.colorbox : uninstall"
+        directory="profiles/uninstall"
+        description="Uninstalls ftw.colorbox"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        />
+
+    <!-- Plone 5 profiles -->
+    <genericsetup:registerProfile
         zcml:condition="have plone-5"
         name="default"
         title="ftw.colorbox"
         directory="profiles/default_plone5"
         description=""
         provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        zcml:condition="have plone-5"
+        name="uninstall"
+        title="ftw.colorbox"
+        directory="profiles/uninstall_plone5"
+        description="Uninstalls ftw.colorbox"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
         />
 
     <include package=".upgrades" />
