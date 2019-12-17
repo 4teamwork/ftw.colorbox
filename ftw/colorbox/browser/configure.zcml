@@ -14,11 +14,20 @@
       />
 
   <browser:page
+      zcml:condition="not-have plone-5"
       for="*"
       name="init-colorbox.js"
       class=".initalize_colorbox.InitColorBoxView"
       permission="zope2.View"
       />
+
+  <adapter
+      zcml:condition="have plone-5"
+      factory=".initalize_colorbox.SettingsInjector"
+      for="* * *"
+      name="colorbox_settings"
+      provides="Products.CMFPlone.interfaces.IPatternsSettings"
+  />
 
   <browser:resourceDirectory
       name="ftw.colorbox.resources"
