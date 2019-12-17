@@ -3,6 +3,4 @@
     <javascript id="++resource++ftw.colorbox.resources/jquery.colorbox-min.js"
                 remove="True" />
     <javascript id="init-colorbox.js" remove="True" />
-    <javascript id="++resource++ftw.colorbox.resources/colorbox.js"
-        remove="True" />
 </object>

@@ -9,6 +9,7 @@ Changelog
 - Bundle JS & CSS resources with Yarn. [djowett-ftw]
 - Add uninstall profiles for plone 4 and 5. [djowett-ftw]
 - Remove `colorbox_view` in Plone 5. [djowett-ftw]
+- Remove colorbox.js - it only put the title off-centre, making things worse rather than better. [djowett-ftw]
 
 
 1.4.0 (2019-08-21)
