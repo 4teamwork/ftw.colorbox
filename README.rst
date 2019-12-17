@@ -7,8 +7,9 @@ ColorBox is a lightweight customizable lightbox plugin for jQuery. More
 information about ColorBox can be found here:
 http://jacklmoore.com/colorbox/
 
-ftw.colorbox adds a new view called `colorbox_view` for folders and topics
-which integrates ColorBox in Plone.
+In Plone 4 ftw.colorbox also adds a view called `colorbox_view` for folders and topics
+which provides a ColorBox gallery when images are clicked on.
+The above view has been removed in Plone 5, though we are open to restoring it via a PR.
 
 Configuration
 =============

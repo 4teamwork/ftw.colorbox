@@ -2,9 +2,11 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="ftw.colorbox">
 
   <browser:page
+      zcml:condition="not-have plone-5"
       for="*"
       name="colorbox_view"
       class=".colorbox_view.ColorBoxView"
