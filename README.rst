@@ -17,6 +17,17 @@ Configuration
 Configuration options are stored in the configuration registry
 (plone.app.registry).
 
+colorbox_config
+  The options passed to the colorbox function (see ColorBox documentation for
+  more details). Provide one option per line. Example::
+
+    transition: "fade"
+    speed: 250
+    maxWidth: "90%"
+    maxHeight: "90%"
+
+The following configuration options ONLY apply to the `colorbox_view` on Plone 4.
+
 image_size
   The name of an image size configured in the imaging control panel
   (e.g. large). If no size is given (default) images will be displayed in
@@ -28,15 +39,6 @@ batch_size
 row_size
   The number of images shown per row. If set to 0 (default) all images are
   floated in the same row.
-
-colorbox_config
-  The options passed to the colorbox function (see ColorBox documentation for
-  more details). Provide one option per line. Example::
-
-    transition: "fade"
-    speed: 250
-    maxWidth: "90%"
-    maxHeight: "90%"
 
 
 Links
