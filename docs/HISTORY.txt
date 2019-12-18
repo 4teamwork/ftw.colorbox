@@ -2,11 +2,17 @@ Changelog
 =========
 
 
-1.4.1 (unreleased)
+1.5.0 (unreleased)
 ------------------
 
 - Move resources to its own bundle for plone 5. [mathias.leimgruber]
+- Bundle JS & CSS resources with Yarn. [djowett-ftw]
 - Add uninstall profiles for plone 4 and 5. [djowett-ftw]
+
+Breaking changes
+
+- Remove `colorbox_view` in Plone 5. [djowett-ftw]
+- Remove colorbox.js - it only put the title off-centre, making things worse rather than better. [djowett-ftw]
 
 
 1.4.0 (2019-08-21)

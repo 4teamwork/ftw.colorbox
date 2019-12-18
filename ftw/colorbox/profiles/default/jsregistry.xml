@@ -7,6 +7,4 @@
                id="init-colorbox.js"
                inline="False"
                />
-    <javascript enabled="True" id="++resource++ftw.colorbox.resources/colorbox.js"
-        insert-after="init-colorbox.js" />
 </object>

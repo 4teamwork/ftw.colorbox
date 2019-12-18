@@ -2,16 +2,22 @@
 <registry>
   <records interface="ftw.colorbox.interfaces.IColorboxSettings" />
 
-  <records interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
-           prefix="plone">
-    <value key="allowed_sizes" purge="false">
-      <element>colorbox 2000:2000</element>
-    </value>
-  </records>
+    <records prefix="plone.resources/ftwcolorbox_lib"
+             interface="Products.CMFPlone.interfaces.IResourceRegistry"
+             remove="true"/>
+
+    <records prefix="plone.resources/ftwcolorbox_init"
+             interface="Products.CMFPlone.interfaces.IResourceRegistry"
+             remove="true"/>
+
+    <records prefix="plone.resources/ftwcolorbox_additional"
+             interface="Products.CMFPlone.interfaces.IResourceRegistry"
+             remove="true"/>
 
     <records prefix="plone.bundles/ftw-colorbox-resources"
              interface="Products.CMFPlone.interfaces.IBundleRegistry">
-        <value key="enabled">True</value>
+        <value key="resources" purge="true">
+        </value>
         <value key="depends">plone</value>
         <value key="stub_js_modules">jquery</value>
         <value key="compile">False</value>

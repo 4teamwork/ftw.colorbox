@@ -7,14 +7,26 @@ ColorBox is a lightweight customizable lightbox plugin for jQuery. More
 information about ColorBox can be found here:
 http://jacklmoore.com/colorbox/
 
-ftw.colorbox adds a new view called `colorbox_view` for folders and topics
-which integrates ColorBox in Plone.
+In Plone 4 ftw.colorbox also adds a view called `colorbox_view` for folders and topics
+which provides a ColorBox gallery when images are clicked on.
+The above view has been removed in Plone 5, though we are open to restoring it via a PR.
 
 Configuration
 =============
 
 Configuration options are stored in the configuration registry
 (plone.app.registry).
+
+colorbox_config
+  The options passed to the colorbox function (see ColorBox documentation for
+  more details). Provide one option per line. Example::
+
+    transition: "fade"
+    speed: 250
+    maxWidth: "90%"
+    maxHeight: "90%"
+
+The following configuration options ONLY apply to the `colorbox_view` on Plone 4.
 
 image_size
   The name of an image size configured in the imaging control panel
@@ -27,15 +39,6 @@ batch_size
 row_size
   The number of images shown per row. If set to 0 (default) all images are
   floated in the same row.
-
-colorbox_config
-  The options passed to the colorbox function (see ColorBox documentation for
-  more details). Provide one option per line. Example::
-
-    transition: "fade"
-    speed: 250
-    maxWidth: "90%"
-    maxHeight: "90%"
 
 
 Links

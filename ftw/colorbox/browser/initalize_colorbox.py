@@ -1,8 +1,36 @@
 from ftw.colorbox.interfaces import IColorboxSettings
+from plone.registry.interfaces import IRegistry
 from Products.Five.browser import BrowserView
 from zope.component import getUtility
-from plone.registry.interfaces import IRegistry
 
+
+# Generating JavaScript is not sustainable especially when we are now using AMD
+# patterns. So we inject a data element into the body tag for Plone 5.
+# Unfortunately this is not easy to replicate in Plone 4, so we leave the JS
+# generation as is, knowing that Plone 4 isn't supported forever anyway.
+
+class SettingsInjector(object):
+    """
+    Injects colorbox settings into the body tag borrowing technology from patternslib
+    """
+
+    def __init__(self, context, request, field):
+        self.request = request
+        self.context = context
+        self.field = field
+
+    def __call__(self):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IColorboxSettings)
+        # Admittably horrible, but this is what we get from settings
+        jsonized = "{%s}" % ",".join(settings.colorbox_config).replace('\'', '"')
+        data = {
+            'data-ftw-colorbox-options': jsonized
+        }
+        return(data)
+
+
+# Plone 4 ONLY - this should be considered deprecated (see comment above)
 
 class InitColorBoxView(BrowserView):
 
