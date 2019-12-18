@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+
+  <layer name="ftw.colorbox"
+         interface="ftw.colorbox.interfaces.IColorboxLayer" />
+
+</layers>
