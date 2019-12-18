@@ -24,7 +24,9 @@
   <adapter
       zcml:condition="have plone-5"
       factory=".initalize_colorbox.SettingsInjector"
-      for="* * *"
+      for="*
+           ftw.colorbox.interfaces.IColorboxLayer
+           *"
       name="colorbox_settings"
       provides="Products.CMFPlone.interfaces.IPatternsSettings"
   />

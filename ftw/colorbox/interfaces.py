@@ -3,6 +3,11 @@ from zope import schema
 from zope.interface import Interface
 
 
+class IColorboxLayer(Interface):
+    """Request layer for ftw.colorbox
+    """
+
+
 class IColorboxSettings(Interface):
     """Interface for registry entries.
     """
