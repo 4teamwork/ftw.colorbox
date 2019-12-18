@@ -6,7 +6,7 @@ from zope.component import getUtility
 
 # Generating JavaScript is not sustainable especially when we are now using AMD
 # patterns. So we inject a data element into the body tag for Plone 5.
-# Unfortunately this is easy to replicate in Plone 4, so we leave the JS
+# Unfortunately this is not easy to replicate in Plone 4, so we leave the JS
 # generation as is, knowing that Plone 4 isn't supported forever anyway.
 
 class SettingsInjector(object):
