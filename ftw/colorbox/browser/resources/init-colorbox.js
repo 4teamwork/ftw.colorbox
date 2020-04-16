@@ -32,6 +32,8 @@
         $('a.colorboxLink').colorbox(options);
     };
 
-    ftwColorboxInitialize();
+    $(document).ready(function() {
+        ftwColorboxInitialize();
+    });
 
 }));

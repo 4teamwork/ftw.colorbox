@@ -5,7 +5,7 @@ Changelog
 1.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Wait for document ready to initialize colorbox. [djowett-ftw]
 
 
 1.5.1 (2019-12-18)
