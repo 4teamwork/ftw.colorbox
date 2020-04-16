@@ -1,13 +1,16 @@
-(function (factory) {
+(function (root, factory) {
     // environment detection
     if (typeof define === 'function' && define.amd) {
-        // AMD. require the modules we need
-        require(['jquery', 'jquery_colorbox'], factory);
+        // AMD. Register a module with required dependencies
+        define(['jquery', 'jquery_colorbox'], factory);
     } else {
+        // TODO delete the browser view implemented by 'colorbox_view.py' so that this
+        // actually is used in Plone 4 !!
+
         // Browser globals
-        factory(window.jQuery, window.jQuery.fn.colorbox);
+        // root.ftwColorboxInitialize = factory(window.jQuery, window.jQuery.fn.colorbox);
     }
-}(function ($, colorbox) {
+}(typeof self !== 'undefined' ? self : this, function ($, colorbox) {
     "use strict";
     // Use $ and colorbox here
 
@@ -35,5 +38,10 @@
     $(document).ready(function() {
         ftwColorboxInitialize();
     });
+
+    // For backwards compatibility in ftw.simplelayout we pass the function
+    // (It would be more conventional to pass an object)
+    // Note ftw.simplelayout still uses global variable
+    return (root.ftwColorboxInitialize = ftwColorboxInitialize);
 
 }));
