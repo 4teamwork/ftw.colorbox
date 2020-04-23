@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6.0 (unreleased)
+1.6.0 (2020-04-23)
 ------------------
 
 - Wait for document ready to initialize colorbox. [djowett-ftw]
