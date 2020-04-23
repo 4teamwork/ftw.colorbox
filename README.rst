@@ -11,6 +11,13 @@ In Plone 4 ftw.colorbox also adds a view called `colorbox_view` for folders and 
 which provides a ColorBox gallery when images are clicked on.
 The above view has been removed in Plone 5, though we are open to restoring it via a PR.
 
+Caveat
+======
+
+As noted in `the colorbox source code <https://github.com/jackmoore/colorbox/blob/c78f880d17c19df3f29b8138df4dcc8afd364efd/jquery.colorbox.js#L467-L469>`_
+you must ensure that colorbox's CSS is loaded before its JavaScript.
+
+
 Configuration
 =============
 
