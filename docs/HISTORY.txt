@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6.1 (unreleased)
+1.6.1 (2020-05-08)
 ------------------
 
 - Do not add resource url css in bundles [mathias.leimgruber]
