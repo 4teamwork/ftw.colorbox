@@ -20,14 +20,14 @@
 */
 #cboxOverlay{background:#fff;}
 #colorbox{}
-    #cboxTopLeft{width:25px; height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') no-repeat 0 0;}
-    #cboxTopCenter{height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') repeat-x 0 -50px;}
-    #cboxTopRight{width:25px; height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') no-repeat -25px 0;}
-    #cboxBottomLeft{width:25px; height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') no-repeat 0 -25px;}
-    #cboxBottomCenter{height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') repeat-x 0 -75px;}
-    #cboxBottomRight{width:25px; height:25px; background:url('++resource++ftw.colorbox.resources/border1.png') no-repeat -25px -25px;}
-    #cboxMiddleLeft{width:25px; background:url('++resource++ftw.colorbox.resources/border2.png') repeat-y 0 0;}
-    #cboxMiddleRight{width:25px; background:url('++resource++ftw.colorbox.resources/border2.png') repeat-y -25px 0;}
+    #cboxTopLeft{width:25px; height:25px; background:url('border1.png') no-repeat 0 0;}
+    #cboxTopCenter{height:25px; background:url('border1.png') repeat-x 0 -50px;}
+    #cboxTopRight{width:25px; height:25px; background:url('border1.png') no-repeat -25px 0;}
+    #cboxBottomLeft{width:25px; height:25px; background:url('border1.png') no-repeat 0 -25px;}
+    #cboxBottomCenter{height:25px; background:url('border1.png') repeat-x 0 -75px;}
+    #cboxBottomRight{width:25px; height:25px; background:url('border1.png') no-repeat -25px -25px;}
+    #cboxMiddleLeft{width:25px; background:url('border2.png') repeat-y 0 0;}
+    #cboxMiddleRight{width:25px; background:url('border2.png') repeat-y -25px 0;}
     #cboxContent{background:#fff; overflow:hidden;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
@@ -37,7 +37,7 @@
         #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
         #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
         #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-        #cboxLoadingOverlay{background:#fff url('++resource++ftw.colorbox.resources/loading.gif') no-repeat 5px 5px;}
+        #cboxLoadingOverlay{background:#fff url('loading.gif') no-repeat 5px 5px;}
         #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
 
 /*
@@ -60,14 +60,14 @@
   The following provides PNG transparency support for IE6
   Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
 */
-.cboxIE6 #cboxTopLeft{background:url('++resource++ftw.colorbox.resources/borderTopLeft.png');}
-.cboxIE6 #cboxTopCenter{background:url('++resource++ftw.colorbox.resources/borderTopCenter.png');}
-.cboxIE6 #cboxTopRight{background:url('++resource++ftw.colorbox.resources/borderTopRight.png');}
-.cboxIE6 #cboxBottomLeft{background:url('++resource++ftw.colorbox.resources/borderBottomLeft.png');}
-.cboxIE6 #cboxBottomCenter{background:url('++resource++ftw.colorbox.resources/borderBottomCenter.png');}
-.cboxIE6 #cboxBottomRight{background:url('++resource++ftw.colorbox.resources/borderBottomRight.png');}
-.cboxIE6 #cboxMiddleLeft{background:url('++resource++ftw.colorbox.resources/borderMiddleLeft.png');}
-.cboxIE6 #cboxMiddleRight{background:url('++resource++ftw.colorbox.resources/borderMiddleRight.png');}
+.cboxIE6 #cboxTopLeft{background:url('borderTopLeft.png');}
+.cboxIE6 #cboxTopCenter{background:url('borderTopCenter.png');}
+.cboxIE6 #cboxTopRight{background:url('borderTopRight.png');}
+.cboxIE6 #cboxBottomLeft{background:url('borderBottomLeft.png');}
+.cboxIE6 #cboxBottomCenter{background:url('borderBottomCenter.png');}
+.cboxIE6 #cboxBottomRight{background:url('borderBottomRight.png');}
+.cboxIE6 #cboxMiddleLeft{background:url('borderMiddleLeft.png');}
+.cboxIE6 #cboxMiddleRight{background:url('borderMiddleRight.png');}
 
 .cboxIE6 #cboxTopLeft,
 .cboxIE6 #cboxTopCenter,
@@ -83,7 +83,7 @@
 
 #colorbox {outline:0;}
 #cboxContent button{border:none;}
-#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-3px; background:url('++resource++ftw.colorbox.resources/controls.png') no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-3px; background:url('controls.png') no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
 #cboxPrevious, #cboxNext {top:50%;}
 #cboxPrevious{left:0px; background-position: -51px -25px;}
 #cboxPrevious:hover{background-position:-51px 0px;}
