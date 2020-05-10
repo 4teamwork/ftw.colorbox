@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.6.2 (unreleased)
+1.6.2 (2020-05-10)
 ------------------
 
 - Do not use css bundles in plone 5, since url is no longer working. [mathias.leimgruber]
