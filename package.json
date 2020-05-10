@@ -10,9 +10,8 @@
     "requirejs": "^2.3.6"
   },
   "scripts": {
-    "build": "r.js -o build.js && r.js -o buildcss.js",
-    "build-css": "r.js -o buildcss.js",
+    "build": "r.js -o build.js",
     "build-js": "r.js -o build.js",
-    "watch": "chokidar \"./ftw/colorbox/browser/resources/(*.js|*.css)\" -i \"**/*-compiled.(js|css)\" -c \"if [[ '{path}' = *.js ]]; then r.js -o build.js; else r.js -o buildcss.js; fi;\""
+    "watch": "chokidar \"./ftw/colorbox/browser/resources/(*.js)\" -i \"**/*-compiled.(js)\" -c \"if [[ '{path}' = *.js ]]; then r.js -o build.js; fi;\""
   }
 }

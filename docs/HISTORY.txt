@@ -5,7 +5,10 @@ Changelog
 1.6.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move all css into the scss file
+  A plone bug https://community.plone.org/t/improper-resource-urls-generated-in-plone-5-0-5/2426
+  prevents loading urls in prod mode. The get prefixed with a wrong absolute path. [mathias.leimgruber]
+
 
 
 1.6.2 (2020-05-10)

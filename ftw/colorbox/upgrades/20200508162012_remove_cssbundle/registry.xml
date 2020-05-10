@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<registry>
+    <records prefix="plone.bundles/ftw-colorbox-resources"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry" purge="False">
+        <value key="csscompilation" remove="True" />
+    </records>
+
+</registry>
