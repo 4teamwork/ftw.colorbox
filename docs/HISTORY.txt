@@ -5,7 +5,7 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix registry entry in plone 4 -> 5 upgradestep [Nachtalb]
 
 
 1.6.3 (2020-05-10)
